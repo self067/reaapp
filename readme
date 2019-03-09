@@ -1,0 +1,10 @@
+
+?
+npm cache clean -f
+
+
+npm install -g create-react-app
+npx create-react-app reaapp
+cd reaapp
+npm start
+npm install --save react-bootstrap
