@@ -3,11 +3,18 @@
 npm cache clean -f
 
 
+
 npm install -g create-react-app
 npx create-react-app reaapp
 cd reaapp
 npm start
 npm install --save react-bootstrap
+
+npm install --save styled-components
+
+
+
+
 
 
 git remote add origin https://github.com/self067/reaapp.git
