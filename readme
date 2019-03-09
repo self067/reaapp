@@ -8,3 +8,7 @@ npx create-react-app reaapp
 cd reaapp
 npm start
 npm install --save react-bootstrap
+
+
+git remote add origin https://github.com/self067/reaapp.git
+git push -u origin master
