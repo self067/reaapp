@@ -14,7 +14,7 @@ const Repair = styled.div`
 	line-height: 22px;
 `
 
-const WOrkTime = styled.div`
+const WorkTime = styled.div`
 	color: #2a2a2a;
 	font-size: 12px;
 	font-weight: 300;
@@ -28,10 +28,43 @@ const WOrkTime = styled.div`
 
 	}
 `
+const Calls = styled.div`
+color: #2a2a2a;
+font-size: 12px;
+font-weight: 300;
+line-height: 24px;
+
+span {
+	display: block;
+	color: #464646;
+	font-size: 21px;
+	font-weight: 700;
+}
+`
+const CallButton = styled.button`
+	width: 176px;
+	height: 48px;
+	background-color: #3fc7db;
+	border-radius: 30px;
+	color: #fff;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22.04px;
+`
+
 class Address extends React.Component {
 	render(){
 		return(
 			<span>{this.props.addr}</span>
+		)
+	}
+}
+
+class TelNumber extends React.Component {
+	render(){
+		return(
+			<span>{this.props.tel}</span>
 		)
 	}
 }
@@ -49,15 +82,19 @@ class Menu extends React.Component {
 					</Repair>
 				</Col>
 				<Col lg={3} lgOffset={1}>
-					<WOrkTime>
+					<WorkTime>
 					Пн-пт с 10 до 20, сб,вс с 11 до 18
 						<Address>Ленинская, 301 </Address>
-					</WOrkTime>
+					</WorkTime>
 				</Col>
 				<Col lg={3}>
+					<Calls>Звонки принимаются 24 часа
+						<TelNumber tel="8 (800) 000 00 00"/>
+					</Calls>
 
 				</Col>
 				<Col lg={2}>
+					<CallButton>Заказать звонок!</CallButton>
 
 				</Col>
 

@@ -11,6 +11,8 @@ import Header from './components/header'
 import Main from './components/main'
 import Menu from './components/menu'
 
+const url = process.env.PUBLIC_URL + '/img/bg.jpg';
+
 const HeaderWrapper = styled.header`
 	width: 100%;
 	height: 49px;
@@ -23,6 +25,12 @@ const MenuWrapper = styled.div`
 	padding-top: 20px;
 
 `
+const MainWrapper = styled.main`
+	height: 600px;
+	padding-top: 130px;
+	background: url(${url}) no-repeat;
+	background-size: cover;
+`
 
 class App extends Component {
   render() {
@@ -31,15 +39,21 @@ class App extends Component {
 			<HeaderWrapper>
 				<Grid>
 					<Header />
-
 				</Grid>
 			</HeaderWrapper>
+
 			<MenuWrapper>
 				<Grid>
 					<Menu />
 				</Grid>
 			</MenuWrapper>
-				<Main />
+			
+			<MainWrapper>
+				<Grid>
+					<Main />
+				</Grid>
+			</MainWrapper>
+			
 			</div>
 
 		/* <div class="wrapper">

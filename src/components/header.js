@@ -12,7 +12,6 @@ const List = styled.ul`
 	align-items: center;
 	padding: 0;
 	height: 49px;
-
 `
 
 class Header extends React.Component {
